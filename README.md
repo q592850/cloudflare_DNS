@@ -7,6 +7,11 @@ yum -y install nc
 
 yum -y install jq
 
+# 如果你不是CentOS的系统怎么办？
+复制脚本代码扔到ChatGPT里面<br>
+然后说：“以此为基础，我的系统平台是乌班图，请帮我修改成乌班图能使用的脚本，功能请保持不变！”<br>
+就完事儿了！<br>
+
 # cloudflare_DNS
 自动更新cloudflare_DNS域名解析
 # Cloudflare API 凭据
