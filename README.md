@@ -61,3 +61,8 @@ content_cm2=""  # 端口关闭时的 CNAME 记录值
 # 此时又会有叼毛问 如何后台运行脚本
 `nohup ./cloudflare_DNS.sh`
 然后关闭ssh窗口
+
+
+# 特别注意
+官方说：不能将此API用于具有.cf、.ga、.gq、.ml或.tk TLD（顶级域）的域<br>
+大白话：上面的结尾的域名不能用API操作<br>
