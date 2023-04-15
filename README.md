@@ -30,8 +30,8 @@ content_cm1=""  # 端口开启时的 CNAME 记录值
 content_cm2=""  # 端口关闭时的 CNAME 记录值
 
 # 检查目标端口是否开启
-  if nc -w 2 `cm1.blackpink520.cyou 49803` < /dev/null 2>&1 | grep -q Connected; then
-这里的主入口需要修改的
+   if nc -z -w 2 cm1.moni.cyou 49803 > /dev/null 2>&1; then
+这里的主入口 cm1.moni.cyou 49803 需要修改的
   
 ## 场景
 你流量转发买了多家 或 同一家，但是不通入口。<br>
