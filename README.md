@@ -1,8 +1,10 @@
 # 不要怀疑我编写脚本的专业性
-这TM是ChatGPT写的！
-我只在CnetOS7.9上用，其他平台我没有测试，自行测试
-需要的环境：
+这TM是ChatGPT写的！<br>
+我只在CnetOS7.9上用，其他平台我没有测试，自行测试<br>
+需要的环境：<br>
+
 yum -y install nc
+
 yum -y install jq
 
 # cloudflare_DNS
