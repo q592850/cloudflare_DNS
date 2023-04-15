@@ -46,11 +46,11 @@ content_cm2=""  # 端口关闭时的 CNAME 记录值
 备沪港隧道 B.12345.com:55555<br>
 
 ### 在检查目标端口开启这里
-  if nc -w 2 `cm1.blackpink520.cyou 49803` < /dev/null 2>&1 | grep -q Connected; then
+  if nc -z -w 2 cm1.moni.cyou 49803 > /dev/null 2>&1; then
   
-  修改成<br>
+  修改成如下，注意域名和端口<br>
   
-  if nc -w 2 `A.12345.com:55555` < /dev/null 2>&1 | grep -q Connected; then 
+ if nc -z -w 2 A.12345.com 55555 > /dev/null 2>&1; then
   
   这个时候会监视 主广港隧道 的端口是否正常<br>
   如果正常的那就用这个主广港隧道，如果关闭了，会解析到 `备沪港隧道 B.12345.com:55555`<br>
